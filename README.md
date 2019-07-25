@@ -1,3 +1,3 @@
-# CollaborativeEditor
+# Collaborative Editor
 This is a basic client-server application that allows multiple users to edit the same document concurrently. Client-Server Architecture have been used in this application. <br/>
 The client perfoms changes on his/her local copy and those changes are sent as requests to the server which edits the corresponding file in its database. The server then sends the changes to all other clients connected to it, working on the same file. The clients keep on listening for requests from the server. If multiple clients are working on the same file, then server makes sure that the edit requests are performed in chronological order to avoid conflicts. Lock mechanism is used for this purpose.
